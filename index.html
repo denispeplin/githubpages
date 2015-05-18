@@ -11,3 +11,8 @@ Hello world!
 </div>
 
 Test publishing.
+
+<div class="markdown">
+  {% capture my_include %}{% include markdown.md %}{% endcapture %}
+  {{ my_include | markdownify }}
+</div>
